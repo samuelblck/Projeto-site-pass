@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,24 +9,34 @@
 </head>
 <h1>Secure Password</h1>
 <section>
-<div class="container">
-   Usuario: <input placeholder='Digite seu Usuario' type="text" name="Usuario" id="user1" class="input">
-  
+    <div class="container">
 
-   Senha: <input placeholder="Digite sua Senha" type="password" name="Senha" id="pass1">
-   <button class="button" onclick="entrar()">
+        Usuario: <input placeholder='Digite seu Usuario' type="text" name="Usuario" id="user1" class="input">
 
-<span>Entrar</span>
-<span></span>
-</button>
 
-    <div id="entrada1">
-    Digite Usuario e senha para entrar
-</div>
+        Senha: <input placeholder="Digite sua Senha" type="password" name="Senha" id="pass1">
+        <button class="button" onclick="entrar()">
+            <span>Entrar</span>
+            <span></span>
+        </button>
 
-</div>
+
+        <!-- Botao cadastro -->
+        <button class="button" onclick="cadastro()"> 
+            <span>Cadastro</span>
+            <span></span>
+        </button>
+        <!-- Final botao cadastro -->
+
+        <div id="entrada1">
+            Digite Usuario e senha para entrar
+        </div>
+
+    </div>
 </section>
+
 <body>
-    <script src = "Projeto-site.js"></script>
+    <script src="Projeto-site.js"></script>
 </body>
+
 </html>
