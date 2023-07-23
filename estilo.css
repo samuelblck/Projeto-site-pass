@@ -23,6 +23,7 @@ body{
    
     
     div{
+      position: relative;
         color: #C0C0C0;
         margin: auto;
         text-align: center;
@@ -45,7 +46,7 @@ body{
    
     input[type="text"]{
        
-       margin: 30px;
+       margin: 20px;
        background: none;
        border: none;
        outline: none;
@@ -55,9 +56,10 @@ body{
        border-radius: 9999px;
        box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
        color: #fff;
+       
     }
     input[type="password"]{
-        margin: 30px;
+        margin: 20px;
         background: none;
         border: none;
         outline: none;
@@ -67,6 +69,8 @@ body{
         border-radius: 9999px;
         box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
         color: #fff;
+        
+
   
     }
     input[type="button"]{
@@ -84,7 +88,7 @@ body{
     .button {
         position: relative;
         display: inline-block;
-        padding: 12px 24px;
+        padding: 10px 20px;
         border: none;
         font-size: 16px;
         background-color: inherit;
@@ -128,6 +132,17 @@ body{
         width: 150px;
         height: 150px;
         opacity: 1;
+      }
+      div i{
+        font-size: 20px;
+        cursor: pointer;
+        position:fixed;
+        top:378px;
+        right: 490px;
+        color: #302e2ec1;
+        
+        
+        
       }
       
       
