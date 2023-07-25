@@ -3,7 +3,7 @@ include "conexao.php"; // Puxa o arquivo conexao
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") { // Só entra aq se o metodo do formulario for post
     // Puxa email e senha do HTML
-    $email = $_POST["email"];
+    $email = strtolower($_POST["email"]);
     $senha = $_POST["senha"];
 
     $senhaHash = password_hash($senha, PASSWORD_BCRYPT); // Joga hash na senha e salva no banco ja com hash
