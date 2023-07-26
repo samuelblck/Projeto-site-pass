@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- conectar com biblioteca de icones -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <!-- asasd  -->
     <!-- conectar com biblioteca de icones fim -->
     <title>Menu</title>
     <link rel="stylesheet" href="estilo.css">
@@ -14,37 +13,32 @@
 <section>
     <div class="container">
 
-        Usuario: <input placeholder='Digite seu Usuario' type="text" name="Usuario" id="user1" class="input">
+        <!-- Formulário de login -->
+        <form action="backend/login.php" method="post"> <!-- processa o login -->
+            <input placeholder='Digite seu Usuário' type="text" name="Usuario" id="user1" class="input">
+            <input placeholder="Digite sua Senha" type="password" name="Senha" id="pass1">
 
+            <!-- Olho para ocultar e mostrar senha -->
+            <i class="bi bi-eye" id="ocultar" onclick="mostrarsenha()"></i>
+            <!-- Olho para ocultar e mostrar senha --> 
 
-        Senha: <input placeholder="Digite sua Senha" type="password" name="Senha" id="pass1">
-        <!-- Olho para ocultar e mostrar senha -->
-        <i class="bi bi-eye" id="ocultar"onclick="mostrarsenha()"></i>
-        <!-- Olho para ocultar e mostrar senha --> 
-        <button class="button" onclick="entrar()">
-            <span>Entrar</span>
-            <span></span>
-        </button>
+            <button type="submit" class="button">
+                <span>Entrar</span>
+                <span></span>
+            </button>
+        </form>
+        <!-- Formulário de login fim -->
 
+        <button type="submit" name="exemplo" id="exemplo"></button>
 
-        <!-- Botao cadastro JS-->
-        <!-- <button class="button" onclick="cadastro()"> 
-            <span>Cadastro</span>
-            <span></span>
-        </button> -->
-        <!-- Final botao cadastro -->
-
-
-        <!-- BOTAO CADATRO PHP -->
+        <!-- BOTAO CADSATRO PHP -->
         <form action="cadastro.html">
             <input type="submit" value="cadastro">
         </form>
         <!-- BOTA FINAL PHP  -->
 
-
-
         <div id="entrada1">
-            Digite Usuario e senha para entrar
+            Digite usuário e senha para entrar
         </div>
 
     </div>
