@@ -12,7 +12,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") { // Só entra aqui se o método do fo
         exit; // Finaliza o script se a senha for inválida
     }
 
-    // Verifica se o email já existe no banco de dados
+    
+
+    // Verifica se o email ja existe no banco de dados
     $queryValidarEmail = "SELECT COUNT(*) AS total FROM usuarios WHERE email = :email";
     $stmtValidarEmail = $banco->prepare($queryValidarEmail);
     $stmtValidarEmail->bindParam(':email', $email);
