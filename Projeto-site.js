@@ -1,8 +1,3 @@
-// function cadastro(){
-//     window.location.href = "cadastro.html";
-// }
-
-
 //função para ocultar e mostrar a senha//
 function mostrarsenha(){
     var inputpass = document.getElementById('pass1')
